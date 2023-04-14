@@ -1,0 +1,265 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box
+
+}
+
+body, html{
+    height: 100vh;
+    scroll-behavior: smooth;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+header{
+    
+    background-color: aliceblue;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    
+    
+}
+header span{
+    color: rgb(127, 210, 238);
+}
+
+div#topo{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+div a{
+    text-decoration: none;
+    margin-left: 15px ;
+    color: black;
+    
+}
+
+section.principal {
+    width: 100vw;
+    height: 100%;
+    
+
+}
+
+
+
+   
+
+section#img-container{
+    background: url(imagens/img-fundo.jpg) no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    
+    
+    
+}
+div#bloco{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(32, 178, 171, 0.418);
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 500px;
+    height: 200px;
+    left: 50%;
+    bottom: 34%;
+    transform: translate(-50%, -50%);
+}
+
+div#bloco > h1, p#bloco {
+    color: white;
+}
+
+div#bloco h1{
+    font-size: 2.5em;
+}
+div#bloco p{
+    font-size: 1.2em;
+}
+
+.conteudo-texto{
+   text-align: center;
+    
+    margin: 60px 0px;
+}
+.conteudo-texto h2{
+    margin-bottom: 20px;
+}
+#rota, #inicio, #sobre{
+    height: 70;
+}
+.section-central{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.conteudo-texto p{
+    line-height: 1.5em;
+}
+
+
+
+
+.quartos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    border-bottom: 3px solid lightseagreen;
+    
+}
+#quartos{
+    height: 50%;
+    display: flex;
+    align-items: flex-start;
+    padding: 0px 20px;
+    justify-content: center;
+}
+#quartos img{
+    object-fit: cover;
+    width: 250px;
+    
+}
+#quartos a{
+    margin: 20px;
+    
+}
+
+
+#iframe{
+    width: 100%;
+    
+}
+#agrupado{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0px 20px;
+  
+}
+
+.conteudo-box{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 40%;
+    margin: 50px 20px;
+}
+.descricao-conteudo p,h3{
+    padding: 10px;
+}
+.descricao-conteudo{
+    height: 120px;
+    
+}
+.img-descricao{
+    width: 90px;
+    height: 120px;
+    object-fit: cover;
+    
+}
+
+footer{
+    position: relative;
+    background-color: lightseagreen;
+    color: white;
+    height: 13%;
+    width: 100%;
+    text-align: justify;
+}
+#footer-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    align-content: space-around;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.39);
+}
+.box-footer  p{
+    
+
+}
+.box-footer{
+    display: flex;
+    margin: 10px 30px;
+    text-align: justify;
+    width: 200px;
+}
+
+#copy{
+   position: absolute;
+   bottom: 10px;
+   width: 100%;
+   text-align: center;
+
+}
+
+/*resposivo*/
+
+
+@media (max-width: 801px) {
+  
+    
+    div#bloco{
+        width: 400px;
+    }
+    #quartos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .quartos{
+        margin-bottom: 10px;
+    }
+    #agrupado{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .conteudo-box {
+        width: 80%;
+        margin: 20px 0px;
+    }
+    .descricao-conteudo{
+        height: 150px;}
+
+    #copy{
+        bottom: 0;
+    }   
+        
+    footer{
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        justify-content: space-evenly
+    }
+   
+    .box-footer{
+        margin: 0px 5px;
+    }
+    #footer-principal {
+        display: flex;
+        flex-direction: column;
+        height: 83%;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+}
