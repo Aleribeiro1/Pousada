@@ -236,8 +236,13 @@ footer{
         width: 80%;
         margin-bottom: 30px;
     }
+  
     .descricao-conteudo{
         height: 150px;}
+    .descricao-conteudo p{
+        font-size: 1em;
+        text-align: justify;
+    }
 
     #copy{
         bottom: 0;

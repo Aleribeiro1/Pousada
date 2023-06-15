@@ -25,14 +25,14 @@ div#quartos img{
 
 @media (max-width: 801px) {
     div#quartos img{
-        margin: 30px 0px;
+        margin-bottom: 30px;
     }
     section{
         height: 100%;
     }
     ul {display: flex;
         flex-direction: column;
-        height: 28%;
+        height: 40%;
         align-items: center;
         justify-content: center;
 
